@@ -1,0 +1,144 @@
+/* Google Fonts @import removed — fonts are now self-hosted via @fontsource in main.jsx */
+/* JetBrains Mono is still loaded from Google Fonts via <link> if needed,
+   but at build time it renders from the system stack as a fallback. */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Light tokens ─────────────────────────────────────────────── */
+:root {
+  --canvas:     #FBFBFD;
+  --canvas-alt: #F5F5F7;
+  --panel:      #F0F0F4;
+  --border:     #E5E5EA;
+  --ink:        #1D1D1F;
+  --ink-soft:   #444448;
+  --muted:      #6E6E76;
+  --purple:     #5E5CE6;
+  --purple-lt:  #7A78F0;
+  --mustard:    #D4A648;
+  --green:      #30B057;
+  --sky:        #0A84FF;
+  --coral:      #FF453A;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ── Dark tokens ──────────────────────────────────────────────── */
+:root.dark {
+  --canvas:     #000000;
+  --canvas-alt: #0A0A0C;
+  --panel:      #161618;
+  --border:     #2A2A2E;
+  --ink:        #F5F5F7;
+  --ink-soft:   #C7C7CC;
+  --muted:      #8E8E93;
+  --purple:     #7D7AFF;
+  --purple-lt:  #9A98FF;
+  --mustard:    #D4A648;
+  --green:      #32D74B;
+  --sky:        #0A84FF;
+  --coral:      #FF453A;
+}
+
+/* ── Reset ────────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+    -webkit-font-smoothing: antialiased;   /* Chrome/Safari */
+  -moz-osx-font-smoothing: grayscale;    /* Firefox on macOS */
+}
+
+/* ── Base ─────────────────────────────────────────────────────── */
+body {
+  background-color: var(--canvas);
+  color: var(--ink);
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--purple);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* ── Selection & scrollbar ────────────────────────────────────── */
+::selection {
+  background: var(--panel);
+  color: var(--purple);
+}
+
+::-webkit-scrollbar        { width: 3px; }
+::-webkit-scrollbar-track  { background: transparent; }
+::-webkit-scrollbar-thumb  { background: var(--border); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--purple); }
+
+
+
+
+/* ── Utilities ────────────────────────────────────────────────── */
+@layer utilities {
+  .smooth {
+    transition: all 0.3s var(--ease-out);
+  }
+
+  .spring {
+    transition: all 0.5s var(--ease-out);
+  }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
+
+/* ── Project fallback gradients ───────────────────────────────── */
+.preview-1 { background: linear-gradient(145deg, #0D0820 0%, #1E1060 40%, #5B42D4 75%, #9080FF 100%); }
+.preview-2 { background: linear-gradient(145deg, #021408 0%, #064E3B 40%, #10B981 75%, #6EE7B7 100%); }
+.preview-3 { background: linear-gradient(145deg, #00080F 0%, #0C2340 40%, #1D4ED8 75%, #60A5FA 100%); }
+.preview-4 { background: linear-gradient(145deg, #150308 0%, #4C0519 40%, #BE123C 75%, #FDA4AF 100%); }
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

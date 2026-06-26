@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/projects/favicon-faisal.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Faisal Malik</title>
+
+    <!-- SEO & Social -->
+    <meta name="description" content="Faisal Malik — MERN Stack Developer and AI/ML researcher from Kashmir. Building modern web apps and exploring explainable AI." />
+    <meta name="author" content="Faisal Malik" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Faisal Malik — Developer" />
+    <meta property="og:description" content="Portfolio of Faisal Malik — MERN Stack, React, AI/ML, Explainable AI." />
+    <meta name="twitter:card"        content="summary" />
+    <meta name="twitter:title"       content="Faisal Malik — Developer" />
+    <meta name="twitter:description" content="Portfolio of Faisal Malik — MERN Stack, React, AI/ML, Explainable AI." />
+
+    <!-- Anti-flicker: apply theme before first paint -->
+    <script>
+      (function () {
+        var saved = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = saved || (prefersDark ? "dark" : "light");
+        document.documentElement.classList.add(theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
