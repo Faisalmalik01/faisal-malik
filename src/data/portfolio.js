@@ -1,19 +1,19 @@
 export const personal = {
   logo: "FM.",
   name: "Faisal Malik",
-  title: "MERN Stack Developer exploring AI & Data Science",
-  tagline: "Building modern web experiences and exploring intelligent systems.",
+  title: "MERN Stack Developer",
+  tagline: "Building modern, responsive, and scalable web applications with the MERN stack.",
 
-  // Full bio lives here — not split between data and component
-  bio: `A Computer Applications (Honours with Research) graduate from Kashmir, India.
+  // Full bio lives here 
+bio: `A Computer Applications (Honours with Research) graduate from Kashmir, India.
 
-My journey into technology started with web development, where I discovered a passion for creating modern, responsive, and user-friendly applications. Over the years, I've built projects using the MERN stack and developed a strong interest in how software can solve real-world problems.
+My journey into technology began with web development, where I discovered a passion for building modern, responsive, and user-friendly web applications. Since then, I've been strengthening my skills across the MERN stack by developing projects that focus on clean user interfaces, reusable components, and practical backend development.
 
-Recently, I've been expanding my focus into Artificial Intelligence, Machine Learning, and Data Science. My research work on explainable AI for retinal disease classification introduced me to the fascinating world of intelligent systems and sparked my curiosity to learn more.
+My current focus is improving my backend fundamentals with Node.js, Express.js, MongoDB, REST APIs, authentication, and database design while continuing to grow as a full-stack developer.
 
-I enjoy building products, learning new technologies, and continuously challenging myself through projects that combine creativity, problem-solving, and engineering.
+As part of my undergraduate research, I developed an Explainable AI project for retinal disease classification. That experience introduced me to machine learning research and strengthened my problem-solving and analytical thinking, although my primary career focus is software engineering and MERN stack development.
 
-I'm actively seeking software development opportunities where I can contribute, learn from experienced teams, and continue growing as a developer. My long-term goal is to combine software engineering with AI and data-driven technologies to build meaningful products that create real impact.`,
+I'm actively seeking software engineering internships where I can contribute, learn from experienced developers, and continue building production-ready applications while growing into a strong full-stack engineer.`,
 
   location: "Kashmir, India",
   email: "thefaisalmallik@gmail.com",         
@@ -37,7 +37,7 @@ export const education = [
       },
       {
         icon: "flask",
-        text: "Focused on artificial intelligence, machine learning, data science, probability & statistics, and computational mathematics.",
+        text: "Studied artificial intelligence, machine learning, data science, probability & statistics, and computational mathematics as part of the BCA (Honours with Research) curriculum.",
       },
       {
         icon: "code",

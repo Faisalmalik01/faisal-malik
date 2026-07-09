@@ -26,18 +26,18 @@ const DOMAINS = [
 const TRAITS = [
   {
     n: "01",
-    title: "Research & AI",
-    body: "Worked on an explainable AI project for retinal disease classification, focusing on understanding and visualizing model decisions through interpretability techniques.",
+    title: "Research Experience",
+    body: "Completed an undergraduate research project on Explainable AI for retinal disease classification, gaining experience in applying machine learning to real-world healthcare problems.",
   },
   {
     n: "02",
     title: "MERN Development",
-    body: "Building full-stack applications with React, Node.js, Express, and MongoDB while continuously improving frontend and backend engineering skills.",
+    body: "Building responsive web applications with React while strengthening backend development using Node.js, Express.js, MongoDB, REST APIs, and authentication.",
   },
   {
     n: "03",
     title: "Always Learning",
-    body: "Currently exploring machine learning, data science, and software engineering while preparing for my first professional opportunity.",
+    body: "Continuously improving backend development, software engineering fundamentals, and building production-ready MERN applications.",
   },
 ];
 
