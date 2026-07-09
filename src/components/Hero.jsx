@@ -95,9 +95,9 @@ export default function Hero() {
             lineHeight: "1.9",
           }}
         >
-          Exploring artificial intelligence, machine learning,
-          and data-driven technologies through research and
-          real-world projects.
+          Building modern, responsive, and scalable web applications
+          using the MERN stack while strengthening my backend
+          development skills.
         </motion.p>
 
         {/* CTA */}
