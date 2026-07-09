@@ -20,7 +20,7 @@ I'm actively seeking software engineering internships where I can contribute, le
   github: "https://github.com/Faisalmalik01",
   linkedin: "https://www.linkedin.com/in/faisalmalik01/",
   twitter: "https://x.com/faisalmalik_01",
-  resume: "/resume-v2.pdf",
+  resume: "/resume.pdf",
 };
 
 export const education = [
