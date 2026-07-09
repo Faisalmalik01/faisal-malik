@@ -37,7 +37,7 @@ export const education = [
       },
       {
         icon: "flask",
-        text: "Studied artificial intelligence, machine learning, data science, probability & statistics, and computational mathematics as part of the BCA (Honours with Research) curriculum.",
+        text: "Studied artificial intelligence, machine learning, data science, probability & statistics, and computational mathematics.",
       },
       {
         icon: "code",
